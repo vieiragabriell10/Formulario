@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div>
+    <h1 id="titulo">CADASTRO</h1>
+    <p id="subtitulo">Adicione suas informações:</p>
+    <br>
+</div>    
+    
+<form>
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+
+        <div class="campo">
+            <h2>Informações Complementares:</h2>
+            <label for="m">M</label>
+            <input type="radio" name="sexo" id="backend">
+            <label for="f">F</label>
+            <input type="radio" name="sexo" id="f">
+        </div>
+
+        <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" required>
+          </div>
+  
+          <div class="campo">
+            <label for="rg"> RG:</label>
+            <input type="file" name="rg" id="rg">
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="numero" id="numero">
+          </div>
+   
+          <div class="campo">
+            <label for="data de dascimento">Data de Nascimento:</label>
+            <input type="date" name="data" id="data">
+          </div>
+
+          <div class="campo">
+            <label for="cep">Cep:</label>
+            <input type="text" name="numero" id="numero">
+          </div>
+  
+          <div class="campo">
+            <label for="rua">Rua:</label>
+            <input type="text" name="nome da rua" id="nome da rua">
+          </div>
+  
+          <div class="campo">
+            <label for="numero">Número:</label>
+            <input type="number" name="numero" id="numero">
+          </div>
+  
+          <div class="campo">
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="nome do bairro" id="nome do bairro">
+          </div>
+  
+          <div class="campo">
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="nome da cidade" id="nome da cidade">
+          </div>
+        </form>
+  
+        <select id="estado" name="estado">
+          <option AC>Acre</option>
+          <option AL>Alagoas</option>
+          <option AP>Amapá</option>
+          <option AM>Amazonas</option>
+          <option BA>Bahia</option>
+          <option CE>Ceará</option>
+          <option DF>Distrito Federal</option>
+          <option ES>Espírito Santo</option>
+          <option GO>Goiás</option>
+          <option MA>Maranhão</option>
+          <option MT>Mato Grosso</option>
+          <option MS>Mato Grosso do Sul</option>
+          <option MG>Minas Gerais</option>
+          <option PA>Pará</option>
+          <option PB>Paraíba</option>
+          <option PR>Paraná</option>
+          <option PE>Pernambuco</option>
+          <option PI>Piauí</option>
+          <option RJ>Rio de Janeiro</option>
+          <option RN>Rio Grande do Norte</option>
+          <option RS>Rio Grande do Sul</option>
+          <option RO>Rondônia</option>
+          <option RR>Roraima</option>
+          <option SC>Santa Catarina</option>
+          <option SP>São Paulo</option>
+          <option SE>Sergipe</option>
+          <option TO>Tocantins</option>
+          <option EX>Estrangeiro</option>
+        </select>
+        <button type="submit">Enviar</button>
+
+        <div class="campo">
+            <h2>Experiência:</h2>
+        </div>
+  
+        <div class="campo">
+            <label>Quais áreas você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend">Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade">Senioridade:</label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="check">
+                <label>Selecione as tecnologias que você domina:</label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Python">
+                <label for="tecnologia3">Python</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnologia3">Javascript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Java">
+                <label for="tecnologia4">Java</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label>Conte-nos um pouco sobre você:</label>
+            <textarea rows="8" style="width: 26em" id="experiência" name="experiência"></textarea>
+        </div>
+        <button class="botao" type="submit">Finalizar</button>
+
+</form>
+
+</body>
+</html>
